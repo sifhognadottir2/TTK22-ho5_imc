@@ -2,9 +2,9 @@
 #include <IMC/Spec/PlanSpecification.hpp>
 #include <iostream>
 #include <IMC/Base/Factory.cpp>
+#include <fstream>
 
 using namespace IMC;
-
 
 void hello::say_hello(){
     std::cout << "Hello World!\n";
@@ -72,4 +72,11 @@ int main()
     
     
     ps.fieldsToJSON(std::cout,4);
+    
+    std::ofstream jsonFile;
+    jsonFile.open("planSpec.json");
+    ps.fieldsToJSON(jsonFile,2);
+    jsonFile.close();
+
+
 }

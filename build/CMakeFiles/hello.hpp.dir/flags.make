@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/sif/lststools/ho5_imc 
+CXX_INCLUDES = -I/home/sif/lststools/ho5_imc -I/home/sif/lststools/ho5_imc/json-develop/include/nlohmann 
 
